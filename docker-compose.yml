@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+    volutility:
+        image: kevthehermit/volutility:latest
+        container_name: volutility
+        volumes:
+            - "./memory-dump:/opt/images"
+            - "./yararules:/opt/VolUtility/yararules"
+            - "./plugins:/opt/VolUtility/plugins"
+            - "./profiles:/opt/VolUtility/plugins/overlay"
+            - "./volutility.conf:/opt/VolUtility/volutility.conf"
+        ports:
+            - "8080:8080"
+        restart: always
