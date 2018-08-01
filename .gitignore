@@ -1,2 +1,4 @@
 memory-dump/*
 !memory-dump/empty
+
+\.DS_Store
